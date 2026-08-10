@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بانک مسائل فرهنگی | مدرسه هوش مصنوعی امام زمانی‌ها</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body { font-family: 'Vazirmatn', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center font-bold text-xl shadow-lg shadow-amber-500/30 text-slate-950">AI</div>
+                    <span class="font-extrabold text-xl tracking-tight text-white">مدرسه هوش مصنوعی <span class="text-amber-400">امام زمانی‌ها</span></span>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-amber-400 transition">صفحه اصلی</a>
+                <a href="academy.html" class="hover:text-amber-400 transition">آکادمی پروژه محور</a>
+                <a href="lab.html" class="hover:text-amber-400 transition">آزمایشگاه زنده</a>
+                <a href="#bank" class="text-amber-400 font-bold border-b-2 border-amber-500 pb-1">بانک مسائل</a>
+                <a href="index.html#community" class="hover:text-amber-400 transition">جامعه سازندگان</a>
+            </nav>
+            <a href="#submit-issue" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-amber-500/20 text-sm">ثبت مسئله جدید</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-6 relative overflow-hidden border-b border-slate-800">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-900/20 via-slate-900 to-slate-900 -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <span class="inline-block bg-amber-500/10 text-amber-400 border border-amber-500/20 px-4 py-1.5 rounded-full text-xs font-semibold">مسائل واقعی را از میدان جمع می‌کنیم</span>
+            <h1 class="text-3xl md:text-5xl font-black leading-tight text-white">
+                بانک مسائل و مشکلات فرهنگی
+            </h1>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+                دغدغه‌مندان، فعالان و مجموعه‌های فرهنگی می‌توانند چالش‌های واقعی خود را ثبت کنند تا این مسائل برای پاسخ‌دهی و حل وارد چرخه آزمایشگاه زنده و آکادمی شوند.
+            </p>
+        </div>
+    </section>
+
+    <!-- Stats / Overview -->
+    <section class="py-10 px-6 max-w-7xl mx-auto border-b border-slate-800/80">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-4 bg-slate-800/30 rounded-2xl border border-slate-800">
+                <span class="text-2xl font-black text-amber-400">۴۲</span>
+                <span class="block text-xs text-slate-400 mt-1">مسئله ثبت‌شده</span>
+            </div>
+            <div class="p-4 bg-slate-800/30 rounded-2xl border border-slate-800">
+                <span class="text-2xl font-black text-emerald-400">۱۸</span>
+                <span class="block text-xs text-slate-400 mt-1">مسئله حل‌شده در آزمایشگاه</span>
+            </div>
+            <div class="p-4 bg-slate-800/30 rounded-2xl border border-slate-800">
+                <span class="text-2xl font-black text-indigo-400">۱۲</span>
+                <span class="block text-xs text-slate-400 mt-1">تبدیل‌شده به دوره آکادمی</span>
+            </div>
+            <div class="p-4 bg-slate-800/30 rounded-2xl border border-slate-800">
+                <span class="text-2xl font-black text-sky-400">۱۵</span>
+                <span class="block text-xs text-slate-400 mt-1">در حال بررسی و تیم‌سازی</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems List Grid -->
+    <section id="bank" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10">
+            <div>
+                <h2 class="text-2xl font-bold text-white">لیست مسائل واقعی میدان</h2>
+                <p class="text-slate-400 text-sm mt-1">مسائلی که مجموعه‌های فرهنگی با آن‌ها مواجه هستند</p>
+            </div>
+            <!-- Status Filter -->
+            <div class="flex flex-wrap gap-2">
+                <button class="bg-amber-500 text-slate-950 font-bold text-xs px-4 py-2 rounded-lg">همه مسائل</button>
+                <button class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-4 py-2 rounded-lg transition">جدید / منتظر آزمایشگاه</button>
+                <button class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-4 py-2 rounded-lg transition">در حال حل در آزمایشگاه</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Problem Card 1 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-amber-500/50 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-md border border-amber-500/20 font-medium">جذب مخاطب و مسجد</span>
+                        <span class="text-xs text-slate-500">کد: PR-201</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">چطور نوجوان بیشتری جذب مسجد کنیم؟</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        نیاز به روش‌ها و ابزارهای جذاب رسانه‌ای، بازی‌وارسازی و تعاملی بر پایه هوش مصنوعی برای درگیرسازی نسل جدید در محیط مسجد.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center text-xs">
+                    <span class="text-slate-500">ثبت‌کننده: کانون فرهنگی مسجد</span>
+                    <span class="text-amber-400 font-semibold">ارسال به آزمایشگاه ←</span>
+                </div>
+            </div>
+
+            <!-- Problem Card 2 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-amber-500/50 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-indigo-500/10 text-indigo-400 text-xs px-2.5 py-1 rounded-md border border-indigo-500/20 font-medium">تولید محتوا</span>
+                        <span class="text-xs text-slate-500">کد: PR-202</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">چطور تولید محتوای مجموعه را افزایش دهیم؟</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        محدودیت نیروی انسانی متخصص رسانه باعث شده حجم تولیدات کم باشد. نیاز به خط تولید خودکار محتوای چندرسانه‌ای.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center text-xs">
+                    <span class="text-slate-500">ثبت‌کننده: مرکز رسانه‌ای استانی</span>
+                    <span class="text-emerald-400 font-semibold">حل شده در آزمایشگاه ✓</span>
+                </div>
+            </div>
+
+            <!-- Problem Card 3 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-amber-500/50 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2.5 py-1 rounded-md border border-emerald-500/20 font-medium">مدیریت جلسات</span>
+                        <span class="text-xs text-slate-500">کد: PR-203</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">چطور از جلساتمان خروجی بیشتری بگیریم؟</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        جلسات مباحثاتی طولانی برگزار می‌شود اما خروجی‌های مکتوب، اینفوگرافیک یا تیزر از آن‌ها استخراج نمی‌شود.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center text-xs">
+                    <span class="text-slate-500">ثبت‌کننده: هیئت اندیشه‌ورز</span>
+                    <span class="text-indigo-400 font-semibold">تبدیل شده به دوره آموزشی 🎓</span>
+                </div>
+            </div>
+
+            <!-- Problem Card 4 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-amber-500/50 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-sky-500/10 text-sky-400 text-xs px-2.5 py-1 rounded-md border border-sky-500/20 font-medium">مدیریت دانش</span>
+                        <span class="text-xs text-slate-500">کد: PR-204</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">چطور دانش و تجربه مجموعه را حفظ کنیم؟</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        با جابه‌جایی نیروها، تجربیات سال‌های گذشته از دست می‌رود. نیاز به سیستم هوشمند ذخیره و بازیابی تجربیات مجموعه.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center text-xs">
+                    <span class="text-slate-500">ثبت‌کننده: موسسه فرهنگی تربیتی</span>
+                    <span class="text-amber-400 font-semibold">در حال بررسی ←</span>
+                </div>
+            </div>
+
+            <!-- Problem Card 5 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-amber-500/50 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-purple-500/10 text-purple-400 text-xs px-2.5 py-1 rounded-md border border-purple-500/20 font-medium">بهینه‌سازی منابع</span>
+                        <span class="text-xs text-slate-500">کد: PR-205</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">تولید محصول بیشتر با نیروی انسانی کمتر</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        چگونه گروه‌های کوچک ۲ یا ۳ نفره می‌توانند نقش یک تیم کامل ۱۰ نفره رسانه‌ای را ایفا کنند؟
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center text-xs">
+                    <span class="text-slate-500">ثبت‌کننده: گروه جهادی رسانه</span>
+                    <span class="text-amber-400 font-semibold">در حال بررسی ←</span>
+                </div>
+            </div>
+
+            <!-- Problem Card 6 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-amber-500/50 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-md border border-rose-500/20 font-medium">بین‌الملل و زبان</span>
+                        <span class="text-xs text-slate-500">کد: PR-206</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">ترجمه و بومی‌سازی محتوا به زبان‌های مختلف</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        چگونه محتوای‌های عمیق دینی و فرهنگی را با حفظ دقت مفاهیم، سریعاً به عربی و انگلیسی دوبله یا زیرنویس کنیم؟
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center text-xs">
+                    <span class="text-slate-500">ثبت‌کننده: بخش بین‌الملل مجموعه</span>
+                    <span class="text-amber-400 font-semibold">در حال بررسی ←</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="submit-issue" class="py-16 px-6 max-w-3xl mx-auto">
+        <div class="bg-slate-800/60 border border-amber-500/30 p-8 rounded-3xl space-y-6">
+            <div class="text-center space-y-2">
+                <h3 class="text-2xl font-bold text-white">ثبت مسئله یا مشکل فرهنگی جدید</h3>
+                <p class="text-slate-400 text-sm">چالش واقعی مجموعه خود را ثبت کنید تا در اولویت بررسی آزمایشگاه قرار گیرد.</p>
+            </div>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('مسئله شما با موفقیت در بانک مسائل ثبت شد.');">
+                <div>
+                    <label class="block text-xs text-slate-300 mb-2">عنوان دقیق مسئله</label>
+                    <input type="text" placeholder="مثلاً: چطور زمان ساخت پوسترها و تیزرهای مناسبتی را کاهش دهیم؟" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">حوزه مسئله</label>
+                        <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                            <option>تولید محتوا و رسانه</option>
+                            <option>جذب مخاطب و تشکیلات</option>
+                            <option>مدیریت دانش و جلسات</option>
+                            <option>کودک و نوجوان</option>
+                            <option>سایر موارد</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">نام مجموعه / تشکل فرهنگی</label>
+                        <input type="text" placeholder="مثال: هیئت انصار / مسجد جامع" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-300 mb-2">توضیح کامل چالش و ابعاد آن</label>
+                    <textarea rows="4" placeholder="توضیح دهید این مسئله چه مانعی در کار شما ایجاد کرده و دقیقاً به چه خروجی نیاز دارید..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-300 mb-2">شماره تماس یا آی‌دی جهت پیگیری</label>
+                    <input type="text" placeholder="09123456789" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-lg shadow-amber-500/20 text-sm">
+                    ثبت مسئله در بانک مسائل
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>مدرسه هوش مصنوعی امام زمانی‌ها — بانک مسائل و مشکلات فرهنگی</p>
+    </footer>
+
+</body>
+</html>

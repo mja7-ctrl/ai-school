@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آکادمی پروژه محور | مدرسه هوش مصنوعی امام زمانی‌ها</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body { font-family: 'Vazirmatn', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center font-bold text-xl shadow-lg shadow-indigo-500/30 text-white">AI</div>
+                    <span class="font-extrabold text-xl tracking-tight text-white">مدرسه هوش مصنوعی <span class="text-indigo-400">امام زمانی‌ها</span></span>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-indigo-400 transition">صفحه اصلی</a>
+                <a href="#projects" class="text-indigo-400 font-bold border-b-2 border-indigo-500 pb-1">آکادمی پروژه محور</a>
+                <a href="index.html#lab" class="hover:text-indigo-400 transition">آزمایشگاه زنده</a>
+                <a href="index.html#bank" class="hover:text-indigo-400 transition">بانک مسائل</a>
+                <a href="index.html#community" class="hover:text-indigo-400 transition">جامعه سازندگان</a>
+            </nav>
+            <a href="#enroll" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-5 py-2.5 rounded-xl transition shadow-lg shadow-indigo-600/20 text-sm">ثبت‌نام در آکادمی</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-6 relative overflow-hidden border-b border-slate-800">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/30 via-slate-900 to-slate-900 -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <span class="inline-block bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-4 py-1.5 rounded-full text-xs font-semibold">یاد می‌گیریم تا بسازیم</span>
+            <h1 class="text-3xl md:text-5xl font-black leading-tight text-white">
+                آکادمی پروژه محور هوش مصنوعی
+            </h1>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+                در آکادمی، آموزش‌ها بر اساس پروژه‌های واقعی طراحی می‌شوند نه آموزش جداگانه ابزارها. شما به جای یادگیری تئوری ابزار، یک خروجی واقعی فرهنگی می‌سازید.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content & Projects Grid -->
+    <section id="projects" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-12">
+            <div>
+                <h2 class="text-2xl font-bold text-white">پروژه‌های عملی آکادمی</h2>
+                <p class="text-slate-400 text-sm mt-1">یک پروژه را انتخاب کنید و یادگیری را همراه با ساخت شروع کنید</p>
+            </div>
+            <!-- Category Filters -->
+            <div class="flex flex-wrap gap-2">
+                <button class="bg-indigo-600 text-white text-xs px-4 py-2 rounded-lg font-medium">همه پروژه‌ها</button>
+                <button class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-4 py-2 rounded-lg font-medium transition">تولید محتوا و رسانه</button>
+                <button class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-4 py-2 rounded-lg font-medium transition">دستیارهای هوشمند</button>
+                <button class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-4 py-2 rounded-lg font-medium transition">کودک و نوجوان</button>
+            </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-indigo-500/50 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2.5 py-1 rounded-md border border-emerald-500/20 font-medium">تولید محتوا</span>
+                        <span class="text-xs text-slate-500">پروژه شماره ۰۱</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition">ساخت دستیار هوش مصنوعی مجموعه فرهنگی</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">طراحی و ساخت یک دستیار اختصاصی برای پاسخگویی به مخاطبان، خلاصه‌سازی جلسات و مدیریت محتوای مجموعه.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">خروجی: دستیار کاربردی سفارشی</span>
+                    <a href="#enroll" class="text-indigo-400 hover:text-indigo-300 text-xs font-bold flex items-center gap-1">مشاهده دوره ←</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-indigo-500/50 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-purple-500/10 text-purple-400 text-xs px-2.5 py-1 rounded-md border border-purple-500/20 font-medium">رسانه و پویانمایی</span>
+                        <span class="text-xs text-slate-500">پروژه شماره ۰۲</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition">ساخت انیمیشن خمیری با AI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">ترکیب ابزارهای تصویرسازی و تصویر به ویدیو برای تولید انیمیشن‌های کوتاه جذاب با استایل خمیری.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">خروجی: ویدیوی انیمیشن آماده نشر</span>
+                    <a href="#enroll" class="text-indigo-400 hover:text-indigo-300 text-xs font-bold flex items-center gap-1">مشاهده دوره ←</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-indigo-500/50 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-md border border-amber-500/20 font-medium">صوتی و موسیقی</span>
+                        <span class="text-xs text-slate-500">پروژه شماره ۰۳</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition">ساخت پادکست و سرود فرهنگی</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">تولید صفر تا صد موسیقی، سرود و پادکست‌های سیاسی-اجتماعی با استفاده از هوش مصنوعی صوتی.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">خروجی: فایل صوتی باکیفیت استودیویی</span>
+                    <a href="#enroll" class="text-indigo-400 hover:text-indigo-300 text-xs font-bold flex items-center gap-1">مشاهده دوره ←</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-indigo-500/50 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-sky-500/10 text-sky-400 text-xs px-2.5 py-1 rounded-md border border-sky-500/20 font-medium">کودک و نوجوان</span>
+                        <span class="text-xs text-slate-500">پروژه شماره ۰۴</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition">ساخت کتاب داستان کودکانه</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">نویسندگی داستان، کاراکترسازی یکدست و تصویرگری کتاب کودک و آماده‌سازی برای چاپ یا انتشار دیجیتال.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">خروجی: فایل کامل کتاب تصویرگری‌شده</span>
+                    <a href="#enroll" class="text-indigo-400 hover:text-indigo-300 text-xs font-bold flex items-center gap-1">مشاهده دوره ←</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-indigo-500/50 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-indigo-500/10 text-indigo-400 text-xs px-2.5 py-1 rounded-md border border-indigo-500/20 font-medium">مدیریت محتوا</span>
+                        <span class="text-xs text-slate-500">پروژه شماره ۰۵</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition">تقویم محتوایی و کمپین‌سازی هوشمند</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">تبدیل یک محتوای خام به ده‌ها پست، تیزر، اینفوگرافیک و ارائه حرفه‌ای برای شبکه‌های اجتماعی.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">خروجی: کمپین کامل و تقویم اجرایی</span>
+                    <a href="#enroll" class="text-indigo-400 hover:text-indigo-300 text-xs font-bold flex items-center gap-1">مشاهده دوره ←</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 hover:border-indigo-500/50 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-md border border-rose-500/20 font-medium">وب و زیرساخت</span>
+                        <span class="text-xs text-slate-500">پروژه شماره ۰۶</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition">طراحی وب‌سایت و سیستم پاسخگویی</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">ساخت سریع وب‌سایت‌های فرهنگی و متصل‌سازی سیستم‌های پاسخگویی خودکار برای تعامل با مخاطبان.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">خروجی: وب‌سایت و چت‌بات فعال</span>
+                    <a href="#enroll" class="text-indigo-400 hover:text-indigo-300 text-xs font-bold flex items-center gap-1">مشاهده دوره ←</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How it works in Academy -->
+    <section class="py-16 px-6 bg-slate-950 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto text-center space-y-12">
+            <div>
+                <h2 class="text-2xl font-bold text-white">مسیر یادگیری در آکادمی چگونه است؟</h2>
+                <p class="text-slate-400 text-sm mt-2">از ثبت‌نام تا ورود به جامعه سازندگان</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-right">
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-2">
+                    <span class="text-indigo-400 font-bold text-lg">۱. انتخاب پروژه</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">بر اساس نیاز مجموعه یا علاقه شخصی، یک پروژه واقعی انتخاب می‌کنید.</p>
+                </div>
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-2">
+                    <span class="text-indigo-400 font-bold text-lg">۲. ساخت قدم به قدم</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">با راهنمایی منتورها و ابزارهای AI، مراحل ساخت پروژه را پیش می‌برید.</p>
+                </div>
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-2">
+                    <span class="text-indigo-400 font-bold text-lg">۳. تحویل خروجی</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">در پایان دوره، یک محصول واقعی و قابل بهره‌برداری تحویل می‌دهید.</p>
+                </div>
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-2">
+                    <span class="text-indigo-400 font-bold text-lg">۴. ورود به جامعه</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">به جامعه سازندگان می‌پیوندید تا در پروژه‌های بزرگ‌تر و حل مسائل واقعی مشارکت کنید.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Form Section -->
+    <section id="enroll" class="py-20 px-6 max-w-3xl mx-auto">
+        <div class="bg-slate-800/60 border border-slate-700 p-8 rounded-3xl space-y-6">
+            <div class="text-center space-y-2">
+                <h3 class="text-2xl font-bold text-white">پیوستن به آکادمی پروژه محور</h3>
+                <p class="text-slate-400 text-sm">اطلاعات خود را وارد کنید تا کارشناسان آکادمی با شما تماس بگیرند.</p>
+            </div>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('درخواست شما ثبت شد.');">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">نام و نام خانوادگی</label>
+                        <input type="text" placeholder="مثال: علی محمدی" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">شماره تماس</label>
+                        <input type="text" placeholder="09123456789" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-300 mb-2">پروژه مورد علاقه برای ساخت</label>
+                    <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500">
+                        <option>ساخت دستیار هوش مصنوعی</option>
+                        <option>ساخت انیمیشن خمیری</option>
+                        <option>ساخت پادکست و سرود</option>
+                        <option>ساخت کتاب کودک</option>
+                        <option>سایر پروژه‌ها...</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-indigo-600/30 text-sm">
+                    ثبت‌نام اولیه و دریافت مشاوره
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>مدرسه هوش مصنوعی امام زمانی‌ها — آکادمی پروژه محور</p>
+    </footer>
+
+</body>
+</html>

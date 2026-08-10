@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آزمایشگاه زنده | مدرسه هوش مصنوعی امام زمانی‌ها</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body { font-family: 'Vazirmatn', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center font-bold text-xl shadow-lg shadow-emerald-500/30 text-slate-950">AI</div>
+                    <span class="font-extrabold text-xl tracking-tight text-white">مدرسه هوش مصنوعی <span class="text-emerald-400">امام زمانی‌ها</span></span>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-emerald-400 transition">صفحه اصلی</a>
+                <a href="academy.html" class="hover:text-emerald-400 transition">آکادمی پروژه محور</a>
+                <a href="#lab" class="text-emerald-400 font-bold border-b-2 border-emerald-500 pb-1">آزمایشگاه زنده</a>
+                <a href="bank.html" class="hover:text-emerald-400 transition">بانک مسائل</a>
+                <a href="community.html" class="hover:text-emerald-400 transition">جامعه سازندگان</a>
+            </nav>
+            <a href="#join-next-session" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-emerald-500/20 text-sm">حضور در جلسه سه‌شنبه</a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Top Header Request) -->
+    <section class="py-16 px-6 relative overflow-hidden border-b border-slate-800">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-slate-900 to-slate-900 -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            
+            <!-- Live Indicator Badge -->
+            <div class="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-4 py-1.5 rounded-full text-xs font-semibold">
+                <span class="relative flex h-2.5 w-2.5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                🔴 گعده فکری و پروژه فعال
+            </div>
+
+            <h1 class="text-3xl md:text-5xl font-black leading-tight text-white">
+                آزمایشگاه زنده هوش مصنوعی
+            </h1>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                آزمایشگاه جایی است که مسائل واقعی و پیچیده فرهنگی ورود می‌کنند. ما ابزارهای مختلف را آزمایش می‌کنیم، نمونه می‌سازیم، تجربیات را ثبت می‌کنیم و راه حل‌های کاربردی پیدا می‌کنیم.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Project Overview Card (کلیت پروژه زنده) -->
+    <section class="py-12 px-6 max-w-7xl mx-auto">
+        <div class="bg-slate-800/60 border border-emerald-500/40 rounded-3xl p-6 md:p-8 space-y-6 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl -z-10"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-700/60 pb-6">
+                <div>
+                    <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-3 py-1 rounded-full font-bold">پروژه جاری آزمایشگاه</span>
+                    <h2 class="text-2xl font-bold text-white mt-2">خط تولید خودکار خلاصه جلسات و تحلیل صورت‌جلسات تشکیلات</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-xs text-slate-400">وضعیت:</span>
+                    <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-bold">در حال اجرا (۶۵٪ پیشرفت)</span>
+                </div>
+            </div>
+
+            <!-- Detailed Project Explanation -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div class="space-y-2 bg-slate-900/50 p-4 rounded-2xl border border-slate-800">
+                    <h3 class="font-bold text-emerald-400 flex items-center gap-2">
+                        <span>🎯</span> مسئله میدان
+                    </h3>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        جلسات طولانی شوراهای فرهنگی و هیئت‌ها معمولاً پیاده‌سازی نمی‌شوند، مصوبات فراموش می‌گردند و دسترسی سریع به تصمیمات گذشته وجود ندارد.
+                    </p>
+                </div>
+
+                <div class="space-y-2 bg-slate-900/50 p-4 rounded-2xl border border-slate-800">
+                    <h3 class="font-bold text-emerald-400 flex items-center gap-2">
+                        <span>⚙️</span> راهکار آزمایشگاه
+                    </h3>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        طراحی یک پایپ‌لاین هوشمند که صوت جلسه را دریافت کرده، نویزگیری می‌کند، به متن تبدیل ساخته و با پرامپت ساختاریافته، صورت‌جلسه منظم استخراج می‌کند.
+                    </p>
+                </div>
+
+                <div class="space-y-2 bg-slate-900/50 p-4 rounded-2xl border border-slate-800">
+                    <h3 class="font-bold text-emerald-400 flex items-center gap-2">
+                        <span>🏆</span> خروجی نهایی پروژه
+                    </h3>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        یک ابزار کاربردی + کد آماده + راهنمای گام‌به‌گام (Case Study) جهت استفاده آزاد برای تمام مجموعه‌های فرهنگی کشور.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Upcoming Session Banner inside Project Card -->
+            <div class="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="space-y-1 text-right">
+                    <span class="text-xs text-emerald-400 font-bold block">📅 جلسه بعدی آنلاین همین پروژه</span>
+                    <h4 class="font-bold text-white text-base">جلسه ۵: بررسی و تست خروجی‌ها در شرایط نویز صوت</h4>
+                    <p class="text-slate-400 text-xs">زمان برگزاری: سه شنبه همین هفته — ساعت ۲۰:۰۰ (آنلاین)</p>
+                </div>
+                <a href="#join-next-session" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition whitespace-nowrap shadow-md shadow-emerald-500/20">
+                    ورود و ثبت‌نام در جلسه آنلاین 🔗
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Progress Dashboard -->
+    <section class="py-6 px-6 max-w-7xl mx-auto">
+        <div class="bg-slate-800/40 border border-slate-700/60 rounded-3xl p-6 md:p-8 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <h3 class="text-lg font-bold text-white">داشبورد آمار گعده فعلی</h3>
+                    <p class="text-slate-400 text-xs mt-1">تعداد جلسات طی‌شده، کارهای ماندگار و وضعیت پیشرفت کلی</p>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-700 px-4 py-2 rounded-xl text-center">
+                    <span class="text-xs text-slate-400 block">پیشرفت پروژه</span>
+                    <span class="text-xl font-bold text-emerald-400">۶۵٪</span>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="w-full bg-slate-900 rounded-full h-3 border border-slate-700/50 overflow-hidden">
+                <div class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 65%;"></div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
+                <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-center">
+                    <span class="text-2xl font-black text-white">۴</span>
+                    <span class="text-xs text-slate-400 block mt-1">جلسه برگزار شده</span>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-center">
+                    <span class="text-2xl font-black text-emerald-400">۵</span>
+                    <span class="text-xs text-slate-400 block mt-1">اقدام تکمیل‌شده</span>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-center">
+                    <span class="text-2xl font-black text-amber-400">۳</span>
+                    <span class="text-xs text-slate-400 block mt-1">کار باقی‌مانده (در دست انجام)</span>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-center">
+                    <span class="text-2xl font-black text-sky-400">۱۲</span>
+                    <span class="text-xs text-slate-400 block mt-1">عضو فعال در گعده</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Pipeline Details (Completed vs Remaining) -->
+    <section class="py-8 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Left Column: Completed Work (Sessions 1-4) -->
+        <div class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                <h3 class="text-lg font-bold text-white">مسیر طی شده (اقدامات و جلسات برگزارشده)</h3>
+            </div>
+
+            <div class="space-y-4 border-r-2 border-emerald-500/30 pr-6 mr-2">
+
+                <!-- Task 1 -->
+                <div class="relative bg-slate-800/40 border border-slate-700/60 p-4 rounded-2xl space-y-2">
+                    <span class="absolute -right-[31px] top-5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-900"></span>
+                    <div class="flex items-center justify-between text-xs text-slate-400">
+                        <span>جلسه اول — برگزار شد</span>
+                        <span class="text-emerald-400 font-semibold">✔ تکمیل شد</span>
+                    </div>
+                    <h4 class="font-bold text-white text-sm">تبیین دقیق مسئله و ساختار صوت جلسات</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">تحلیل چالش‌های صوتی جلسات تشکیلات، هم‌پوشانی صداها و گویندگان متعدد.</p>
+                </div>
+
+                <!-- Task 2 -->
+                <div class="relative bg-slate-800/40 border border-slate-700/60 p-4 rounded-2xl space-y-2">
+                    <span class="absolute -right-[31px] top-5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-900"></span>
+                    <div class="flex items-center justify-between text-xs text-slate-400">
+                        <span>جلسه دوم — برگزار شد</span>
+                        <span class="text-emerald-400 font-semibold">✔ تکمیل شد</span>
+                    </div>
+                    <h4 class="font-bold text-white text-sm">ارزیابی ابزارهای تبدیل گفتار به متن (Speech-to-Text)</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">تست Whisper و ابزارهای ایرانی روی ۱۰ نمونه فایل صوتی واقع در میدان و اندازه‌گیری میزان دقت.</p>
+                </div>
+
+                <!-- Task 3 -->
+                <div class="relative bg-slate-800/40 border border-slate-700/60 p-4 rounded-2xl space-y-2">
+                    <span class="absolute -right-[31px] top-5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-900"></span>
+                    <div class="flex items-center justify-between text-xs text-slate-400">
+                        <span>جلسه سوم — برگزار شد</span>
+                        <span class="text-emerald-400 font-semibold">✔ تکمیل شد</span>
+                    </div>
+                    <h4 class="font-bold text-white text-sm">طراحی پرامپت‌های ساختاریافته استخراج مصوبات</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">طراحی قالب پرامپت برای جداسازی مصوبات جلسه، مسئول اقدام، مهلت زمانی و مصوبات مالی.</p>
+                </div>
+
+                <!-- Task 4 -->
+                <div class="relative bg-slate-800/40 border border-slate-700/60 p-4 rounded-2xl space-y-2">
+                    <span class="absolute -right-[31px] top-5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-900"></span>
+                    <div class="flex items-center justify-between text-xs text-slate-400">
+                        <span>جلسه چهارم — برگزار شد</span>
+                        <span class="text-emerald-400 font-semibold">✔ تکمیل شد</span>
+                    </div>
+                    <h4 class="font-bold text-white text-sm">پیاده‌سازی نمونه اولیه‌ی خط تولید خودکار</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">اتصال خط تبدیل صوت به متن با زبانه پردازش هوشمند و استخراج خودکار خروجی متنی اولیه.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Column: Remaining Tasks (N tasks) -->
+        <div class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                <h3 class="text-lg font-bold text-white">اقدامات باقی‌مانده (در دست انجام)</h3>
+            </div>
+
+            <div class="space-y-4">
+
+                <!-- Remaining Task 1 -->
+                <div class="bg-slate-800/60 border border-amber-500/40 p-5 rounded-2xl space-y-3 relative overflow-hidden">
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="bg-amber-500/10 text-amber-400 px-3 py-1 rounded-full border border-amber-500/20 font-semibold">در حال انجام — جلسه ۵ (سه‌شنبه)</span>
+                        <span class="text-slate-400">پیش‌رو</span>
+                    </div>
+                    <h4 class="font-bold text-white text-sm">تست خروجی روی صوت‌های نویزدار و بی‌کیفیت</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        بررسی رفتار مدل در برابر صوت‌های ضبط شده با موبایل در محیط‌های شلوغ و نویزدار و اعمال فیلترهای حذف نویز پیش از پردازش.
+                    </p>
+                </div>
+
+                <!-- Remaining Task 2 -->
+                <div class="bg-slate-800/30 border border-slate-700/60 p-5 rounded-2xl space-y-3">
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="bg-slate-700 text-slate-300 px-3 py-1 rounded-full font-semibold">برنامه‌ریزی شده — جلسه ۶</span>
+                        <span class="text-slate-500">در نوبت</span>
+                    </div>
+                    <h4 class="font-bold text-white text-sm">اتصال به پیام‌رسان ایتا و ارسال خودکار صورت‌جلسه</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        طراحی ربات یا دستیاری که پس از آماده شدن صورت‌جلسه، آن را به‌صورت قالب‌بندی‌شده برای اعضای شورای مجموعه ارسال کند.
+                    </p>
+                </div>
+
+                <!-- Remaining Task 3 -->
+                <div class="bg-slate-800/30 border border-slate-700/60 p-5 rounded-2xl space-y-3">
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="bg-slate-700 text-slate-300 px-3 py-1 rounded-full font-semibold">گام نهایی</span>
+                        <span class="text-slate-500">در نوبت</span>
+                    </div>
+                    <h4 class="font-bold text-white text-sm">تدوین مستند تجربه (Case Study) و انتشار عمومی</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        جمع‌بندی کدهای آماده، پرامپت‌ها و راهنمای گام‌به‌گام جهت انتقال به سایر تشکل‌ها و مجموعه‌های فرهنگی.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Participation Form / Join Online Session -->
+    <section id="join-next-session" class="py-16 px-6 max-w-3xl mx-auto">
+        <div class="bg-slate-800/60 border border-emerald-500/30 p-8 rounded-3xl space-y-6">
+            <div class="text-center space-y-2">
+                <span class="text-xs text-emerald-400 font-bold block">مشارکت در جلسه آنلاین سه‌شنبه</span>
+                <h3 class="text-2xl font-bold text-white">حضور در جلسه پنجم آزمایشگاه زنده</h3>
+                <p class="text-slate-400 text-sm">اگر می‌خواهید در تست عملی ابزارها، پیشنهاد پرامپت یا ارائه نمونه صوت مشارکت کنید، فرم زیر را تکمیل کنید.</p>
+            </div>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('ثبت‌نام شما برای جلسه آنلاین سه‌شنبه انجام شد. لینک جلسه برای شما ارسال خواهد شد.');">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">نام و نام خانوادگی</label>
+                        <input type="text" placeholder="مثال: علی حسینی" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">شماره همراه یا آی‌دی پیام‌رسان</label>
+                        <input type="text" placeholder="09123456789" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-300 mb-2">نوع مشارکت شما در این جلسه</label>
+                    <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500">
+                        <option>شرکت‌کننده و ناظر فعال</option>
+                        <option>ارائه نمونه صوت جلسه مجموعه برای تست</option>
+                        <option>مشارکت در بهبود پرامپت‌ها و کدها</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-lg shadow-emerald-500/20 text-sm">
+                    ثبت‌نام و دریافت لینک جلسه آنلاین سه‌شنبه
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>مدرسه هوش مصنوعی امام زمانی‌ها — آزمایشگاه زنده (Live Lab)</p>
+    </footer>
+
+</body>
+</html>
